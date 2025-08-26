@@ -1,7 +1,9 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Codex — Predição de CID-10",
   description:
-    "Predição automática de CID-10 com explicabilidade e validação médica assistida."
+    "Predição automática de CID-10 com explicabilidade e validação médica assistida.",
 };
 
 export default function RootLayout({
@@ -11,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body style={{ fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif" }}>
-        {children}
-      </body>
+      <body className="min-h-screen antialiased">{children}</body>
     </html>
   );
 }
